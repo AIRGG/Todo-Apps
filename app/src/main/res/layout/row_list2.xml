@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="411dp"
+        android:layout_height="134dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/lbl_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lbl_konten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_judul"
+            android:layout_alignTop="@id/lbl_judul"
+            android:layout_marginTop="38dp"
+            android:text="TextView"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lbl_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_judul"
+            android:layout_alignTop="@id/lbl_judul"
+            android:layout_marginTop="78dp"
+            android:text="TextView"
+            android:textColor="#3F51B5"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_list_edit"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="20dp"
+            android:text="Show" />
+
+        <Button
+            android:id="@+id/btn_list_delete"
+            android:layout_width="63dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="22dp"
+            android:layout_toStartOf="@+id/btn_list_edit"
+            android:text="Del" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

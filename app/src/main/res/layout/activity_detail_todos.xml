@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail_todos">
+
+    <TextView
+        android:id="@+id/lbl_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="Detail Todos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_detail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="127dp"
+        android:text="Judul"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_detail4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="29dp"
+        android:text="Konten"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblJudul" />
+
+    <TextView
+        android:id="@+id/lbl_detail5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="68dp"
+        android:text="Tgl Start"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblKonten" />
+
+    <TextView
+        android:id="@+id/lbl_detail6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tgl End"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblTglEnd"
+        app:layout_constraintStart_toStartOf="@+id/lblTglEnd" />
+
+    <TextView
+        android:id="@+id/lblJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/lbl_detail2"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_detail2"
+        tools:text="lblJudul" />
+
+    <TextView
+        android:id="@+id/lblKonten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/lbl_detail4"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_detail4"
+        tools:text="lblKonten" />
+
+    <TextView
+        android:id="@+id/lblTglStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/lbl_detail5"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_detail5"
+        tools:text="lblTglStart" />
+
+    <TextView
+        android:id="@+id/lblTglEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblTglStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblTglStart"
+        tools:text="lblTglEnd" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="332dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+        <TextView
+            android:id="@+id/lbl_cobatime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <LinearLayout
+            android:layout_width="328dp"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtInpNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Masukan namamu.."
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnTampil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tampilkan" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="397dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Namamu: " />
+
+            <TextView
+                android:id="@+id/txtNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_notif"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Create Notif" />
+
+            <Button
+                android:id="@+id/btn_openact"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:text="Open Activity" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
